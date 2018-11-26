@@ -10,40 +10,37 @@ public class LancamentoContaLegado {
 
 	private TotalControleLancamento totalControleLancamento;
 	private ListaControleLancamento[] listaControleLancamento;
-
-	public int getIndice(){
+	
+	public int getIndice() {
 		return indice;
 	}
-	public int getTamanhoPagina(){
+	public void setIndice(int indice) {
+		this.indice = indice;
+	}
+	public int getTamanhoPagina() {
 		return tamanhoPagina;
 	}
-	public int getTotalElements(){
+	public void setTamanhoPagina(int tamanhoPagina) {
+		this.tamanhoPagina = tamanhoPagina;
+	}
+	public int getTotalElements() {
 		return totalElements;
 	}
-
-	public ListaControleLancamento[] getListaControleLancamento(){
-		return listaControleLancamento;
+	public void setTotalElements(int totalElements) {
+		this.totalElements = totalElements;
 	}
-
-	public TotalControleLancamento getTotalControleLancamento(){
+	public TotalControleLancamento getTotalControleLancamento() {
 		return totalControleLancamento;
 	}
-
-	public int setIndice(int indice){
-		indice = indice;
+	public void setTotalControleLancamento(TotalControleLancamento totalControleLancamento) {
+		this.totalControleLancamento = totalControleLancamento;
 	}
-	public int setTamanhoPagina(int tamanhoPagina){
-		tamanhoPagina = tamanhoPagina;
+	public ListaControleLancamento[] getListaControleLancamento() {
+		return listaControleLancamento;
 	}
-	public int setTotalElements(int setTotalElements){
-		totalElements = totalElements;
-	}
-
-	public ListaControleLancamento[] setListaControleLancamento(ListaControleLancamento[] setListaControleLancamento){
-		listaControleLancamento = listaControleLancamento;
+	public void setListaControleLancamento(ListaControleLancamento[] listaControleLancamento) {
+		this.listaControleLancamento = listaControleLancamento;
 	}
 
-	public TotalControleLancamento setTotalControleLancamento(TotalControleLancamento setTotalControleLancamento){
-		totalControleLancamento = totalControleLancamento;
-	}
+	
 }

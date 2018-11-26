@@ -1,9 +1,9 @@
 package hello;
 
-public class TotalControleLançamento {
+public class TotalControleLancamento {
 	private int quantidadeLancamentos;
 	private int quantidadeRemessas;
-	private int valorLancamentos;
+	private double valorLancamentos;
 
 	public int getQuantidadeLancamentos(){
 		return quantidadeLancamentos;
@@ -11,7 +11,7 @@ public class TotalControleLançamento {
 	public int getQuantidadeRemessas(){
 		return quantidadeRemessas;
 	}
-	public int getValorLancamentos(){
+	public double getValorLancamentos(){
 		return valorLancamentos;
 	}
 	public void setQuantidadeLancamentos(int quantidadeLancamentos) {
