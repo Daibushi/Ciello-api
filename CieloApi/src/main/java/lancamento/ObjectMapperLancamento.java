@@ -1,4 +1,4 @@
-package hello;
+package lancamento;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -15,7 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 
-public class ObjectMapperDemo {
+public class ObjectMapperLancamento {
     
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     

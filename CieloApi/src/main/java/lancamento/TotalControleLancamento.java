@@ -1,4 +1,4 @@
-package hello;
+package lancamento;
 
 public class TotalControleLancamento {
 	private int quantidadeLancamentos;
