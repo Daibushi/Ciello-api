@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<style type="text/css">
+  table {
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+</style>
+<div style="text-align:center">
+  <h1>{{title}}</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Data do lançamento</th> 
+        <th>Descrição</th> 
+        <th>Número</th> 
+        <th>Situação</th> 
+        <th>Data de confirmação</th> 
+        <th>Dados bancários</th> 
+        <th>Valor final</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lanc of text.listaControleLancamento">
+        <td>{{lanc.dataLancamentoContaCorrenteCliente}}</td>
+        <td>{{lanc.lancamentoContaCorrenteCliente.nomeTipoOperacao}}</td>
+        <td>{{lanc.lancamentoContaCorrenteCliente.numeroRemessaBanco}}</td>
+        <td>{{lanc.lancamentoContaCorrenteCliente.nomeSituacaoRemessa}}</td>
+        <td>{{lanc.dataEfetivaLancamento}}</td>
+        <td>{{lanc.nomeBanco}} 
+         ag {{lanc.lancamentoContaCorrenteCliente.dadosDomicilioBancario.codigoBanco}} 
+         CC {{lanc.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente}} 
+        </td>
+        <td>R{{lanc.valorLancamentoRemessa | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
